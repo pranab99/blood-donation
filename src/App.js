@@ -21,22 +21,22 @@ function App(){
         // </div>
         <>
         <Router>
+            <Nav/>
           < Routes>
            
-            <Route exact path="/" component={Nav} />
+            <Route exact path="/" element={<Home/>}/>
               
            
             {/* <Route path="/about" component={About} />  */}
               
             
-            <Route path="/aware" component={Aware} />
+            <Route path="/aware" element={<Aware/>}/>
               
            
             <Route to="/" />
           </ Routes>
         </Router>
-        <Signup />
-      <Signin />
+     
       </>
     )
 }

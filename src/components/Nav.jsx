@@ -37,15 +37,16 @@ export default function Nav() {
           <MDBCollapse show={showNavColorThird} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
               <MDBNavbarItem className='active'>
-                <MDBNavbarLink aria-current='page' href='#'>
+              <Link to="/"><MDBNavbarLink aria-current='page' href='#'>
                   Home
-                </MDBNavbarLink>
+                </MDBNavbarLink></Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>Community</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-              <Link to="/aware"> <MDBNavbarLink href='./Aware.jsx'>Awareness</MDBNavbarLink></Link>
+              {/* <Link to="/aware"> <MDBNavbarLink >Awareness</MDBNavbarLink></Link> */}
+              <Link to="/aware"> <MDBNavbarLink >Awareness</MDBNavbarLink></Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>About</MDBNavbarLink>
