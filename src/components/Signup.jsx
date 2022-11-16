@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {signupData }  from '../service/Data';
+import { signupData } from '../service/Data';
 import {
     MDBBtn,
     MDBContainer,
@@ -23,47 +23,48 @@ function Signup() {
     const [loc, setloc] = React.useState('');
     const [phone, setphone] = React.useState('');
 
-    function name_ChangeHandeler(e){
+    function name_ChangeHandeler(e) {
         setname(e.target.value);
-      }
-      function age_ChangeHandeler(e){
+    }
+    function age_ChangeHandeler(e) {
         setage(e.target.value);
-      }
-      function gen_ChangeHandeler(e){
+    }
+    function gen_ChangeHandeler(e) {
         setgen(e.target.value);
-      }
-      function bg_ChangeHandeler(e){
+    }
+    function bg_ChangeHandeler(e) {
         setbg(e.target.value);
-      }
-      function  email_ChangeHandeler(e){
+    }
+    function email_ChangeHandeler(e) {
         setemail(e.target.value);
-      }
+    }
 
-      function  loc_ChangeHandeler(e){
+    function loc_ChangeHandeler(e) {
         setloc(e.target.value);
-      }
-      function  phone_ChangeHandeler(e){
+    }
+    function phone_ChangeHandeler(e) {
         setphone(e.target.value);
-      }
+    }
 
-      const val={
-        
-            "name": name,
-            "age" : age,
-            "gender":gen,
-            "bloodgroup":bg,
-            "email":email,
-            "location":loc,
-            "ph":phone
-        
-      }
+    const val = {
 
-    function submitChangeHandler(){
+        "name": name,
+        "age": age,
+        "gender": gen,
+        "bloodgroup": bg,
+        "email": email,
+        "location": loc,
+        "ph": phone
+
+    }
+
+    function submitChangeHandler() {
         let ret = signupData(val);
         console.log(ret);
-        // window.location.reload();
-        
-      }
+        window.location.reload();
+
+
+    }
     return (
         <MDBContainer fluid>
 
@@ -76,25 +77,25 @@ function Signup() {
 
                             <div className="d-flex flex-row align-items-center mb-4 ">
                                 <MDBIcon fas icon="user me-3" size='lg' />
-                                <MDBInput label='Your Name' id='form1' type='text' className='w-100' onChange={name_ChangeHandeler}/>
+                                <MDBInput label='Your Name' id='form1' type='text' className='w-100' onChange={name_ChangeHandeler} />
                             </div>
                             <div className="d-flex flex-row align-items-center mb-4 ">
                                 <MDBIcon fas icon="user me-3" size='lg' />
-                                <MDBInput label='Your Age' id='form1' type='text' className='w-100' onChange={age_ChangeHandeler}/>
+                                <MDBInput label='Your Age' id='form1' type='text' className='w-100' onChange={age_ChangeHandeler} />
                             </div>
                             <div className="d-flex flex-row align-items-center mb-4 ">
                                 <MDBIcon fas icon="user me-3" size='lg' />
-                                <MDBInput label='Your Gender' id='form1' type='text' className='w-100' onChange={gen_ChangeHandeler}/>
+                                <MDBInput label='Your Gender' id='form1' type='text' className='w-100' onChange={gen_ChangeHandeler} />
                             </div>
                             <div className="d-flex flex-row align-items-center mb-4 ">
                                 <MDBIcon fas icon="user me-3" size='lg' />
-                                <MDBInput label='Your Blood Group' id='form1' type='text' className='w-100' onChange={bg_ChangeHandeler}/>
+                                <MDBInput label='Your Blood Group' id='form1' type='text' className='w-100' onChange={bg_ChangeHandeler} />
                             </div>
 
 
                             <div className="d-flex flex-row align-items-center mb-4">
                                 <MDBIcon fas icon="envelope me-3" size='lg' />
-                                <MDBInput label='Your Email' id='form2' type='email' onChange={email_ChangeHandeler}/>
+                                <MDBInput label='Your Email' id='form2' type='email' onChange={email_ChangeHandeler} />
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
@@ -104,7 +105,7 @@ function Signup() {
 
                             <div className="d-flex flex-row align-items-center mb-4">
                                 <MDBIcon fas icon="envelope me-3" size='lg' />
-                                <MDBInput label='Phone' id='form2' type='text' onChange={phone_ChangeHandeler}/>
+                                <MDBInput label='Phone' id='form2' type='text' onChange={phone_ChangeHandeler} />
                             </div>
 
 

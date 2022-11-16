@@ -4,7 +4,7 @@ import axios from "axios";
 export const signupData = async (val ) => {
     axios({
         method: 'post',
-        url: '/user/12345',
+        url: 'http://localhost:3024/donorReg',
         data: {
           ...val,
         }
@@ -15,7 +15,7 @@ export const signupData = async (val ) => {
 export const signinData = async (val ) => {
     axios({
         method: 'post',
-        url: '/user/12345',
+        url: 'http://localhost:3024/acceptorReg',
         data: {
           ...val,
         }
