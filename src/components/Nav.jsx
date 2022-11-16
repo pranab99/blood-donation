@@ -42,14 +42,14 @@ export default function Nav() {
                 </MDBNavbarLink></Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Community</MDBNavbarLink>
+              <Link to="/comm"><MDBNavbarLink href='#'>Community</MDBNavbarLink></Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
               {/* <Link to="/aware"> <MDBNavbarLink >Awareness</MDBNavbarLink></Link> */}
               <Link to="/aware"> <MDBNavbarLink >Awareness</MDBNavbarLink></Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>About</MDBNavbarLink>
+              <Link to="/about"> <MDBNavbarLink href='#'>About</MDBNavbarLink></Link>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

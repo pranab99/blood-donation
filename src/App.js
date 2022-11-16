@@ -3,6 +3,8 @@ import Signup from "./components/Signup"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Aware from "./components/Aware"
+import About from "./components/About"
+import Community from "./components/Community"
 
 import {
     BrowserRouter as Router,
@@ -10,6 +12,7 @@ import {
     Route,
     Navigate,
   } from "react-router-dom";
+
 
 function App(){
     return (
@@ -27,7 +30,8 @@ function App(){
             <Route exact path="/" element={<Home/>}/>
               
            
-            {/* <Route path="/about" component={About} />  */}
+            <Route path="/about" element={<About/>} /> 
+            <Route path="/comm" element={<Community/>} /> 
               
             
             <Route path="/aware" element={<Aware/>}/>
